@@ -1,1 +1,1 @@
-choose_game
+return
