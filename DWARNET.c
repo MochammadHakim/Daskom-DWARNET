@@ -100,7 +100,7 @@ int main(){
 
     case 3:
         system("cls");
-        daftar_admin();
+        daftar();
         break;
 
     case 4:
