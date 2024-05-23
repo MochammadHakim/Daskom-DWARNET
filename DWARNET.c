@@ -1415,12 +1415,12 @@ void bayar(){
     rewind(f_pesanan);
     printf("Pilih Nama Pesanan Yang Ingin Di Bayar (Tulis 'Exit' Untuk Kembali!): ");
     gets(pilih_pesanan);
-    printf("Pilih Jumlah Pesanan Yang Ingin Di Bayar: ");
-    scanf("%d", &jumlah);
-    getchar();
+    // printf("Pilih Jumlah Pesanan Yang Ingin Di Bayar: ");
+    // scanf("%d", &jumlah);
+    // getchar();
     while (fread(&pesanan, sizeof(pesanan), 1, f_pesanan)==1)
     {
-        if (strcmpi(pilih_pesanan, pesanan.nama)==0 && (jumlah==pesanan.jumlah))
+        if (strcmpi(pilih_pesanan, pesanan.nama)==0)
         {
             pesananExist=1;
             break;
